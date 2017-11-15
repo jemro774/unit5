@@ -4,8 +4,11 @@
 
 words = input('Enter some words: ').split(' ')
 
-middleIndexing = len(words)/2
+middleIndexing = len(words)//2
 
-print(words[middleIndexing])
+if len(words)%2 == 0:
+    print(words[middleIndexing-1:middleIndexing+1])
+else:
+    print(words[middleIndexing])
 
 

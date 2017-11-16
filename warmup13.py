@@ -12,4 +12,3 @@ for i in range(1,21):
 print(min(numbers))
 print(max(numbers))
 print(sum(numbers))
-    

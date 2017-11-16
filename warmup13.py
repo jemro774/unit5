@@ -6,6 +6,10 @@ from random import randint
 
 numbers = []
 
-for numbers in range(1,21):
+for i in range(1,21):
     numbers.append(randint(1,101))
+    
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
     

@@ -5,5 +5,3 @@
 words = input('Enter a list of words: ').split(' ')
 
 print('The longest word is', max(words))
-
-

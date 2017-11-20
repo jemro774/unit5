@@ -4,31 +4,5 @@
 
 from random import randint
 
-month = randint(1,12)
-
-if month == 1:
-    print('January')
-elif month == 2:
-    print('February')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-elif month == 1:
-    print('January')
-else:
-    print('January')
-
-
+months = ['January','February','March','April','May','June','July','August','September','October','November','December']
+print(randint(months[0],months[11]))

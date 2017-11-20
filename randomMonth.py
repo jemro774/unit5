@@ -4,5 +4,5 @@
 
 from random import randint
 
-months = ['January','February','March','April','May','June','July','August','September','October','November','December']
-print(randint(months[0],months[11]))
+months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Deciembre']
+print(months[randint(0,11)])

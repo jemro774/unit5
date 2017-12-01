@@ -7,6 +7,7 @@ from time import time
 
 N = 100 #how many numbers will be sorted
 
+#Selection Sort
 a = [] 
 
 n = len(a) 
@@ -23,23 +24,17 @@ for i in range(j,n-1):
     if iMin != j: 
         swap(a[j], a[iMin])
 
-def mySort(A):
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range(0,len(A)-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i] #swap in python
-                swapped = True
-        if not swapped:
-            break
-        swapped = False
-        for i in range(len(A)-2,-1,-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1], A[i]
-                swapped = True
-            
-    return A
+def mySort(a):
+    n = len(a) 
+    
+    for j in range(0,n-1): 
+        iMin = j 
+        for i in range(j+1,n): 
+            if a[i] < a[iMin]: 
+                iMin = i
+        if iMin != j: 
+            a[j],a[iMin] = a[iMin],a[j]
+    return a
 
 if __name__ == '__main__':
     

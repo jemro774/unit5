@@ -1,6 +1,6 @@
 #Jack Robey
 #11/27/17
-#cocktailSort.py - implementation of cocktail sort
+#selectionSort.py - implementation of selection sort
 
 from random import randint
 from time import time
@@ -8,22 +8,6 @@ from time import time
 N = 100 #how many numbers will be sorted
 
 #Selection Sort
-a = [] 
-
-n = len(a) 
-
-j = 0 
-
-b = j+1 
-
-for i in range(j,n-1): 
-    iMin = j 
-    for i in range(b,n): 
-        if a[b] < a[iMin]: 
-            iMin = b 
-    if iMin != j: 
-        swap(a[j], a[iMin])
-
 def mySort(a):
     n = len(a) 
     
